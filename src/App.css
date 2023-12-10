@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.ride-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
+.ride {
+  width: 70%;
+  margin: 3rem auto 0 auto;    
+}
+
+.header {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+input {
+  padding: 10px 3px;
+  width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 10px 1rem;
+  background: #334;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ride-content {
+  margin-top: 2rem;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+      "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas,
+      "Courier New", monospace;
+}
+
+#profile {
+  margin-top: 1000px;
+  font-size: 3rem;
+  background-color: rgb(243, 124, 124);
+  font-weight: 800;
+  text-align: center;
+  padding: 80px;
+  border: 2px solid red;
+  margin-bottom: 500px;
+}
+
+#ride {
+  margin-top: 500px;
+  border: 6px double green;
+  font-size: 3rem;
+  background-color: lightgreen;
+  font-weight: 800;
+  text-align: center;
+  padding: 80px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 5px solid rgb(47, 0, 255);
+  background-color: rgb(77, 150, 210);
+  cursor: pointer;
+  
+}
