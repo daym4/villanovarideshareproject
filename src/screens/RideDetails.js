@@ -26,7 +26,7 @@ const RideDetails = () => {
             <p>Date: {ride.date}</p>
             <p>Time: {ride.time}</p>
             <p>Ride Destination: {ride.destination}</p>
-            <p>Student's Email: {ride.email}</p>
+            <p>Student's Email: <a href={`mailto:${ride.email}`}> {ride.email}</a></p> 
             <p>Ride Type: {ride.rideType}</p>
             <p>Seats Available: {ride.seatsAvailable}</p>
             <p>Anticipated Cost: {ride.cost}</p>
