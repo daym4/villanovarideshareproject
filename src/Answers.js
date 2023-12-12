@@ -25,23 +25,16 @@ const Answers = () => {
 
     return (
         <div className="container">
-            <h1>Available Rides</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Destination</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {rides.map(ride => (
-                        <tr key={ride.id}>
-                            <td>
-                                <Link to={`/ride-details/${ride.id}`}>{ride.destination}</Link>
-                            </td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            <h1>Currently Available Rides For Sign-Ups:</h1>
+            <div className="rides-list">
+                {rides.map(ride => (
+                    <div key={ride.id} className="ride-frame">
+                        <Link to={`/ride-details/${ride.id}`}>
+                            <div className="ride-destination">{ride.destination}</div>
+                        </Link>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };

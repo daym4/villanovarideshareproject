@@ -127,3 +127,38 @@ button {
   cursor: pointer;
   
 }
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.rides-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: flex-start; 
+}
+
+.ride-frame {
+  flex: 1; 
+  min-width: 200px; 
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+  background-color: #fff; 
+}
+
+.ride-destination {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none; 
+}
+
+@media (max-width: 768px) {
+  .ride-frame {
+    flex-basis: 100%; 
+  }
+}
