@@ -3,9 +3,9 @@ import HomePage from './screens/homepage.js';
 import { BrowserRouter as Router, Routes, 
   Route } from "react-router-dom";
 import AddRide from "./screens/AddRide.js";
-import Profile from "./screens/Profile.js";
+import RideDetails from "./screens/RideDetails.js";
 import About from "./screens/About.js";
-import MyButton from "./components/MyButton";
+import MyButton from "./components/MyButton.js";
 
 const App = () => {
   return (
@@ -13,13 +13,14 @@ const App = () => {
             
       <Router>
         <MyButton to="" />
+        <MyButton to="Ride Details" />
         <MyButton to="Add a New Ride" />
-        <MyButton to="Profile" />
         <MyButton to="About" />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/ride details" element={<RideDetails />} />
           <Route path="/add a new ride" element={<AddRide />} />
-          <Route path="/profile" element={<Profile />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>

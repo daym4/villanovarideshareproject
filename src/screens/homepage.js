@@ -1,5 +1,5 @@
 import React from "react";
-import Answers from"./../Answers.js";
+import Answers from"../Answers.js";
 
 const HomePage = () => {
     return (
